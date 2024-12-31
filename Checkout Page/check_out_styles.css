@@ -1,0 +1,262 @@
+/* Global body styling */
+* {
+    font-family: 'Nanum Gothic', Arial,sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+body {
+    background: url('top-view-raw-rice-inside-bag-plate-grey-surface.jpg.crdownload') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    animation: fadeIn 1.5s ease-in-out;
+}
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Color Palette Inspired by Korean Cuisine */
+:root {
+    --primary-red: #C62828;
+    --secondary-red: #FF5252;
+    --background-cream: #dcccb2;
+    --text-dark: #212121;
+    --accent-gold: #FFD700;
+}
+/* Navigation Styles */
+header {
+     text-align: center;
+    background-color: var(--primary-red);  /* Updated to match the new color variable */
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--accent-gold);  /* Updated to use accent-gold color */
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Form container styling */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-left: auto;  /* Push form to the right */
+    margin-right: 50px; /* Space from right edge */
+    margin-top: 50px;   /* Space from top */
+    max-width: 980px;   /* Adjust width as needed */
+    padding: 50px;
+}
+
+.form-box {
+    width: 100%;
+    text-align: center;
+}
+
+/* Individual form box styling */
+.form-box {
+    width: 100%; /* Ensure form elements take full width */
+    text-align: center;
+}
+
+/* Input, textarea, and select styling */
+input, textarea, select {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%; /* Full width for mobile responsiveness */
+    max-width: 400px; /* Set a maximum width to avoid large inputs */
+    border: 2px solid #cbfaff;
+    border-radius: 5px;
+    background-color: #1f3b52b7; /* Dark purple */
+    color: #fff;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #d3d3d3;
+}
+
+textarea {
+    resize: none;
+}
+
+/* Dropdown menu styling */
+select {
+    width: 100%;
+    max-width: 400px; /* Set a maximum width for the select box */
+}
+.form-box button {
+    background-color: var(--primary-red); /* Using the primary red for consistency */
+    border: none;
+    padding: 12px 25px;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.1rem; /* Slightly larger font */
+    cursor: pointer;
+    width: 100%;
+    max-width: 400px; /* Adjusting the max-width to ensure it's not too wide */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Submit button styling */
+.form-box button {
+    background-color: #ff6347;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    max-width: 400px; /* Ensure the button is not too wide */
+}
+
+.form-box button:hover {
+    background-color: #e55347;
+}
+
+/* Footer */
+footer {
+    background-color: var(--text-dark);
+    color: white;
+    padding: 3rem 2rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.footer-content div {
+    flex: 1;
+}
+/* soical media links */
+.social-links {
+    font-family: Arial, sans-serif;
+}
+
+.social-links h3 {
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #e1d8d8;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.social-links a i {
+    margin-right: 8px;
+    font-size: 1.2rem;
+}
+
+.social-links a:hover {
+    color: #007bff;
+}
+
+.social-links a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 0.5rem 0;
+}
+
+.newsletter form {
+    display: flex;
+}
+
+.newsletter input {
+    flex-grow: 1;
+    padding: 0.5rem;
+}
+footer .newsletter button {
+    background-color: var(--secondary-red);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px; /* Optional for rounded corners */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+footer .newsletter button:hover {
+    transform: scale(1.05);
+}
+
+.newsletter button {
+    background-color: var(--secondary-red);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #444;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+}
